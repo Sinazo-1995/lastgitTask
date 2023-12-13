@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+body{
+    /*background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuiltin.com%2Fsoftware-engineering-perspectives%2Fnew-programming-languages&psig=AOvVaw2aI4MeQWz0h8JWJ0U_PvAw&ust=1702496459725000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKinrtnTioMDFQAAAAAdAAAAABAD");
+    */background-color: black;
+}
+
+nav{
+    animation: transitionIn 3s;
+}
+
+h1{
+    margin-left: 7.5%;
+    color: rgb(249, 143, 4);
+}
+
+h4{
+    color: rgb(249, 143, 4);
+}
+
+.programming{
+    filter:blur(1px)
+}
+
+img{
+    width: 350px;
+    height: 350px;
+    clip-path: circle();
+
+    float: left;
+    animation: transitionIn 9s
+}
+
+hr{
+    border: 1px solid white;
+}
+
+#section1{
+    text-align: left;
+    vertical-align: text-top;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 100px;
+    padding-left: 10%;
+    color: white;
+    margin-left:25%;
+    animation: transitionIn 13s;
+}
+
+#section2{
+    float: left;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 100px;
+    color: white;
+    animation: transitionIn 13s;
+}
+
+.fade-in-out {
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards, fade-out 4s 1s ease-out forwards;
+  }
+  
+  @keyframes transitionIn {
+    from {
+      opacity: 0;
+      transform: rotateX(-10deg)
+    }
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
